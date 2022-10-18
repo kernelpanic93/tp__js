@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Comprar tickets</title>
+</head>
+<body class="container-fluid p-0">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Conf Bs As</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">La conferencia <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Los oradores</a>
+                <a class="nav-item nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-item nav-link active" href="#">Conviertete en orador</a>
+                <a class="nav-item nav-link text-success" href="#">Comprar tickets</a>
+              </div>
+            </div>
+          </nav>     
+    
+    <div class="container-fluid main mt-5 w-75">
+        <div class="card-deck my-2">
+            <div class="card border-primary text-center mx-1 py-4">
+                <h5 class="card-title font-weight-bold">Estudiante</h5>
+                <h5 class="font-size-1 card-text my-2">Tienen un descuento</h5>
+                <p class="font-weight-bold">80%</p>
+                <div class="text-muted">*presentar documentacion</div>
+
+            </div>
+            <div class="card border-success text-center mx-1 py-4">
+                <h5 class="card-title font-weight-bold">Trainee</h5>
+                <h5 class="card-text">Tienen un descuento</h5>
+                <p class="font-weight-bold">50%</p>
+                <div class="text-muted">*presentar documentacion</div>
+
+            </div>
+            <div class="card border-warning text-center mx-1 py-4">
+                <h5 class="card-title font-weight-bold">Junior</h5>
+                <h5 class="card-text">Tienen un descuento</h5>
+                <p class="font-weight-bold">15%</p>
+                <div class="text-muted">*presentar documentacion</div>
+            </div>
+        </div>
+        
+        <div class="venta text-center my-1">VENTA</div>
+        <h1 class=" text-center valor__ticket">VALOR DE TICKET $200</h1>     
+        
+        <form class="my-3">
+            <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-email">
+                <input type="text" class="form-control my-3" placeholder="Correo">
+              </div>    
+            <div class="form-row">
+                <div class="col">
+                    <label for="label__etiqueta__cantidad">Cantidad</label>
+                    <input type="text" class="form-control" placeholder="Cantidad" id="label__etiqueta__cantidad">
+                </div>
+                <div class="col">
+                    <label for="label__etiqueta__categoria">Categoria</label>
+                    <select class="form-control" id="label__etiqueta__categoria">
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+            </div>
+          </form>
+          
+          <div class="btn-group w-100">
+            <button type="button" class="btn w-50 mr-2 btn-primary button__borrar" style="background-color: #97C93E ; border: none;">Borrar</button>
+            <button type="button" class="btn w-50 btn-primary button__borrar" style="background-color: #97C93E ; border: none;">Resumen</button>
+          </div>
+    </div>
+
+    <footer class="rodapie px-4 mt-2">  
+          <a href="#">Preguntas <br> Frecuentes</a>
+          <a href="#">Contactanos</a>
+          <a href="#">Prensa</a>
+          <a href="#">Conferencias</a>
+          <a href="#">Terminos y <br> condiciones</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Estudiantes</a>
+    </footer>
+        
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+</body>
+
+</html>

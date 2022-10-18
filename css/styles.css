@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg,#1d3744, #1d5271);
+    justify-content: space-around;
+}
+
+footer a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
