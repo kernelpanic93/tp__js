@@ -3,10 +3,6 @@
     transition: 0.5s;
 }
 
-.btn {
-    border-radius: 10px;
-}
-
 footer {
     display: flex;
     flex-wrap: wrap;
