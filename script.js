@@ -10,11 +10,15 @@ function calcularDcto() {
         2 : 0.5,
         3 : 0.15
     }
-    if (categoria < 0) {
-        resumenConDcto = RESUMEN_ERROR;
+    if (cantidadEntradas < 0) {
+        document.getElementById('output').innerHTML = RESUMEN_ERROR;
+        return;
     }
-    let resumenConDcto = (cantidadEntradas* PRECIO_ENTRADA * DESCUENTOS[categoria]) || RESUMEN_ERROR;
+    let resumenConDcto = (cantidadEntradas * PRECIO_ENTRADA * DESCUENTOS[categoria]);
     
     document.getElementById('output').innerHTML = "Total a Pagar: $" + resumenConDcto;
 }
 
+function borrar() {
+    document.getElementById('output').innerHTML = "Total a Pagar: ";
+}
